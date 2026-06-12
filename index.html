@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิสัยทัศน์เว็บปี 2030: ยุคสมัยแห่ง Generative UI และ Spatial Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        warmbg: '#fdfcf8',
+                        warmtext: '#2d2a26',
+                        accent: '#d97706',
+                        accentlight: '#fef3c7'
+                    },
+                    fontFamily: {
+                        sans: ['Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #fdfcf8;
+            color: #2d2a26;
+            scroll-behavior: smooth;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(217, 119, 6, 0.1);
+        }
+        .tab-active {
+            border-bottom: 2px solid #d97706;
+            color: #d97706;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-warmtext">
+
+    <!-- Chosen Palette: Warm Neutrals (bg: #fdfcf8, text: #2d2a26) with Amber accent (#d97706) for a biomorphic and calm feel. -->
+    <!-- Application Structure Plan: A linear narrative dashboard divided into 3 thematic sections (Visual Face, Tech Stack with Web3 Paradigm, Developer Roles) extracted from the report. Uses interactive tabs for detailed qualitative insights and Chart.js to visualize extrapolated quantitative trends (comparing 2024 vs 2030). Includes an interactive Web2 vs Web3 comparison module to explain the evolution of decentralized systems. The structure ensures users can read sequentially or jump via navigation, prioritizing context and ease of understanding. -->
+    <!-- Visualization & Content Choices: 1. UI Trend (Radar Chart) to compare feature maturity. 2. Stack Layers (HTML/CSS Flex/Grid) to represent architecture without SVG. 3. Performance Latency (Bar Chart) to show edge computing impact. 4. Developer Time (Doughnut Chart) to visualize the shift to AI orchestration. 5. Interactive Paradigm Toggler (HTML/JS) for Web2 vs Web3 comparison. Unicode emojis replace SVG icons. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+    <nav class="fixed top-0 w-full z-50 glass-panel shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 font-bold text-xl tracking-tight text-accent">
+                    &#x1F310; WEB 2030
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#vision" class="text-sm font-medium hover:text-accent transition-colors">วิสัยทัศน์</a>
+                    <a href="#uiux" class="text-sm font-medium hover:text-accent transition-colors">อินเตอร์เฟส</a>
+                    <a href="#tech" class="text-sm font-medium hover:text-accent transition-colors">เทคโนโลยีเบื้องหลัง</a>
+                    <a href="#roles" class="text-sm font-medium hover:text-accent transition-colors">บทบาทนักพัฒนา</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="vision" class="pt-32 pb-20 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                ก้าวสู่ยุคสมัยแห่ง <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-yellow-500">Generative UI & Spatial Web</span>
+            </h1>
+            <p class="text-lg md:text-xl text-stone-600 mb-10 leading-relaxed">
+                การผสานรวมของ AI อัจฉริยะ, Spatial Computing และสถาปัตยกรรมประสิทธิภาพสูงที่จะเปลี่ยนโฉมหน้าประวัติศาสตร์อินเทอร์เน็ต เว็บจะไม่ใช่หน้ากระดาษคงที่ แต่คือสภาพแวดล้อมจำลองอัจฉริยะที่มีชีวิต
+            </p>
+            <a href="#uiux" class="inline-block bg-accent text-white px-8 py-3 rounded-full font-semibold hover:bg-yellow-600 transition-colors shadow-lg">
+                สำรวจข้อมูลเชิงลึก &#x2193;
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 pb-24 space-y-32">
+
+        <section id="uiux" class="scroll-mt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">&#x2728; 1. หน้าตาและอินเตอร์เฟส (The Visual Face)</h2>
+                <p class="max-w-3xl mx-auto text-stone-600">
+                    ส่วนนี้อธิบายถึงการเปลี่ยนแปลงของรูปแบบเว็บไซต์ จากเทมเพลตที่ตายตัวไปสู่อินเตอร์เฟสที่สร้างขึ้นใหม่แบบเรียลไทม์ คุณสามารถคลิกแท็บด้านล่างเพื่อสำรวจแนวคิดหลัก 3 ประการที่จะกำหนดหน้าตาของเว็บในปี 2030 และดูแผนภาพเปรียบเทียบพัฒนาการ
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100">
+                    <div class="flex space-x-4 border-b border-stone-200 mb-6" id="ui-tabs">
+                        <button class="pb-2 tab-active focus:outline-none" onclick="switchUITab('generative', this)">Generative UI</button>
+                        <button class="pb-2 text-stone-500 hover:text-accent focus:outline-none" onclick="switchUITab('brutalism', this)">Tactile Brutalism</button>
+                        <button class="pb-2 text-stone-500 hover:text-accent focus:outline-none" onclick="switchUITab('spatial', this)">Spatial Web</button>
+                    </div>
+
+                    <div id="tab-generative" class="ui-content block">
+                        <h3 class="text-xl font-bold mb-2">อินเตอร์เฟสชั่วคราวเฉพาะบุคคล</h3>
+                        <p class="text-stone-600 mb-4">ไม่มีหน้าตาเว็บที่ตายตัวอีกต่อไป เว็บจะสร้าง UI ขึ้นมาใหม่สำหรับคุณโดยเฉพาะ ณ วินาทีนั้น โดยวิเคราะห์จากความต้องการ บริบท อุปกรณ์ และอารมณ์ของคุณ</p>
+                        <div class="bg-accentlight p-4 rounded-lg border-l-4 border-accent text-sm">
+                            <strong>ตัวอย่าง:</strong> การค้นหาตั๋วเครื่องบินสำหรับครอบครัว เว็บจะปรับโครงสร้างแสดงแผนที่ 3D สถานที่สำหรับเด็กทันที โดยไม่ต้องกดตัวกรองใดๆ
+                        </div>
+                    </div>
+
+                    <div id="tab-brutalism" class="ui-content hidden">
+                        <h3 class="text-xl font-bold mb-2">จาก Soft UI สู่ความดิบและเส้นโค้งชีวภาพ</h3>
+                        <p class="text-stone-600 mb-4"><strong>Tactile Brutalism:</strong> ใช้ความงามเรขาคณิตเฉียบคมและพื้นผิวสัมผัสเชิงฟิสิกส์ เพื่อแยกความต่างระหว่างสิ่งที่มนุษย์และ AI สร้าง</p>
+                        <p class="text-stone-600"><strong>Biomorphic Design:</strong> ทิ้งกริดแข็งทื่อ แทนที่ด้วยรูปทรงธรรมชาติตามโครงสร้างรังผึ้งหรือสายน้ำ</p>
+                    </div>
+
+                    <div id="tab-spatial" class="ui-content hidden">
+                        <h3 class="text-xl font-bold mb-2">รอยต่อระหว่างหน้าจอและโลกจริง</h3>
+                        <p class="text-stone-600 mb-4">เมื่อแว่น AR/VR กลายเป็นเรื่องปกติ เว็บไซต์จะแสดงผลเป็น 3 มิติในพื้นที่รอบตัว (WebXR) คุณสามารถดึงสินค้ามาวางบนโต๊ะ หรือเดินเข้าไปในโมเดลจำลองสถานที่ได้โดยตรงผ่านเบราว์เซอร์</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100 flex flex-col justify-center">
+                    <h3 class="text-center font-semibold mb-2">เปรียบเทียบมิติการโต้ตอบ: ปัจจุบัน vs 2030</h3>
+                    <p class="text-xs text-center text-stone-500 mb-4">แสดงการยกระดับขีดความสามารถของ UI ในมิติต่างๆ (จำลองข้อมูลเชิงคุณภาพ)</p>
+                    <div class="chart-container h-64 sm:h-80 max-h-[350px]">
+                        <canvas id="uiRadarChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech" class="scroll-mt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">&#x26A1; 2. เทคโนโลยีเบื้องหลังและโครงสร้างสัญญัตติ (Web3 Tech Stack)</h2>
+                <p class="max-w-3xl mx-auto text-stone-600">
+                    ส่วนนี้พาคุณเจาะลึกโครงสร้างสถาปัตยกรรม (Tech Stack) และความก้าวหน้าของระบบเว็บแบบกระจายศูนย์ (Web3) ประจำปี 2030 ซึ่งเข้ามาแทนที่ระบบเซิร์ฟเวอร์แบบรวมศูนย์ด้วยแนวคิดระบบตรวจสอบสิทธิ์อัจฉริยะ (Trustless System) และความเป็นส่วนตัวขั้นสุดยอด
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-stone-50 p-6 rounded-xl border border-stone-200 text-center hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">&#x1F6E1;&#xFE0F;</div>
+                    <h3 class="font-bold mb-2">Self-Sovereign Identity (DID)</h3>
+                    <p class="text-sm text-stone-600">ระบบตัวตนดิจิทัลที่แท้จริง ไม่พึ่งพาค่ายไอทียักษ์ใหญ่ ล็อกอินเว็บด้วยกระเป๋าสินทรัพย์เสมือน (Secure Wallet)</p>
+                </div>
+                <div class="bg-stone-50 p-6 rounded-xl border border-stone-200 text-center hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">&#x1F517;</div>
+                    <h3 class="font-bold mb-2">Smart Contracts & Global State</h3>
+                    <p class="text-sm text-stone-600">สัญญาอัจฉริยะเก็บสถานะเว็บแบบถาวร ดำเนินธุรกรรมและความเป็นเจ้าของได้ปลอดภัยไร้พ่อค้าคนกลาง</p>
+                </div>
+                <div class="bg-stone-50 p-6 rounded-xl border border-stone-200 text-center hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">&#x2601;&#xFE0F;</div>
+                    <h3 class="font-bold mb-2">Decentralized Storage</h3>
+                    <p class="text-sm text-stone-600">เก็บรักษาสินทรัพย์และประวัติเว็บผ่านเครือข่ายกระจายส่วน (IPFS, Arweave) ปลอดภัยจากการปิดกั้น</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+                <!-- Interactive Paradigm Toggler -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-center font-bold text-lg mb-2">กระบวนทัศน์ที่เปลี่ยนไป: Web2 vs Web3 2030</h3>
+                        <p class="text-xs text-center text-stone-500 mb-6">คลิกเพื่อจำลองสลับหน้าตาโครงสร้างพื้นฐานระบบที่ใช้งานอยู่ในอินเทอร์เน็ต</p>
+                        
+                        <div class="flex justify-center space-x-2 mb-6">
+                            <button id="btn-web2" class="px-4 py-2 bg-stone-200 text-sm font-semibold rounded-lg transition-all text-stone-700" onclick="toggleWebParadigm('web2')">รวมศูนย์แบบเก่า (Web2)</button>
+                            <button id="btn-web3" class="px-4 py-2 bg-accent text-white text-sm font-semibold rounded-lg transition-all" onclick="toggleWebParadigm('web3')">กระจายศูนย์ 2030 (Web3)</button>
+                        </div>
+                    </div>
+                    
+                    <div id="paradigm-content" class="space-y-4 min-h-[250px] flex flex-col justify-center">
+                        <!-- Content will be dynamically rendered here via JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Latency Chart & Tech Text -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-center font-semibold mb-2">ระยะเวลาตอบสนองเมื่อดึงข้อมูลผ่าน Edge Web3 Node</h3>
+                        <p class="text-xs text-center text-stone-500 mb-4">การลดลงของความหน่วงเมื่อใช้ Decentralized Edge ประสานความเร็วแบบไม่มีเซิร์ฟเวอร์กลาง (ms)</p>
+                    </div>
+                    <div class="chart-container h-64 sm:h-80 max-h-[300px]">
+                        <canvas id="latencyChart"></canvas>
+                    </div>
+                    <div class="mt-4 p-4 bg-accentlight/50 rounded-xl text-xs text-stone-700 leading-relaxed">
+                        🚨 <strong>ขีดจำกัดเดิมถูกทลายลง:</strong> การเชื่อมต่อแบบกระจายส่วนในยุค 2030 ไม่ใช่ทางเลือกที่ช้าอีกต่อไป ด้วยเทคโนโลยี WebAssembly Node และการสตรีมสถานะผ่าน Edge Cache ความเร็วในการอ่านข้อมูลบล็อกเชนจึงเร็วไม่ต่างจากเว็บปกติในอดีต
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roles" class="scroll-mt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">&#x1F468;&#x200D;&#x1F4BB; 3. บทบาทนักพัฒนา (Developer Roles)</h2>
+                <p class="max-w-3xl mx-auto text-stone-600">
+                    AI จะไม่ได้มาแย่งงาน แต่จะเปลี่ยนรูปแบบการทำงาน ส่วนนี้แสดงให้เห็นถึงการย้ายความสนใจจากการ "เขียนโค้ด" ไปสู่การเป็น "สถาปนิกและผู้ควบคุม AI" สำรวจการกระจายเวลาทำงานที่เปลี่ยนแปลงไปในกราฟด้านล่าง
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100 order-2 lg:order-1 flex flex-col justify-center">
+                    <h3 class="text-center font-semibold mb-2">การแบ่งสัดส่วนเวลาทำงานของนักพัฒนา</h3>
+                    <p class="text-xs text-center text-stone-500 mb-4">เปรียบเทียบยุค Coder (ปัจจุบัน) vs ยุค AI Orchestrator (2030)</p>
+                    <div class="flex justify-center mb-2 space-x-4">
+                        <button class="px-3 py-1 bg-stone-200 text-sm rounded hover:bg-stone-300" onclick="updatePieChart('2024')">ข้อมูลยุคปัจจุบัน</button>
+                        <button class="px-3 py-1 bg-accent text-white text-sm rounded hover:bg-yellow-600" onclick="updatePieChart('2030')">ข้อมูลปี 2030</button>
+                    </div>
+                    <div class="chart-container h-64 sm:h-80 max-h-[350px]">
+                        <canvas id="devRoleChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="space-y-6 order-1 lg:order-2">
+                    <div class="flex items-start">
+                        <div class="text-3xl mr-4 mt-1">&#x1F3EB;</div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-1">AI Teacher / Trainer</h4>
+                            <p class="text-stone-600">สร้าง "Design DNA" กำหนดกฎเกณฑ์ แล้วปล่อยให้ AI เขียนโค้ดและทดสอบระบบย่อยตามเป้าหมาย</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-3xl mr-4 mt-1">&#x1F6E1;&#xFE0F;</div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-1">Zero Trust & Cybersecurity</h4>
+                            <p class="text-stone-600">เมื่อ AI จัดการโค้ดมหาศาล ความท้าทายคือความปลอดภัย นักพัฒนาต้องเชี่ยวชาญการตรวจสอบช่องโหว่และการโจมตีรูปแบบใหม่</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-3xl mr-4 mt-1">&#x1F9ED;</div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-1">UX Strategist</h4>
+                            <p class="text-stone-600">จากผู้จัดวางปุ่ม สู่ผู้เข้าใจพฤติกรรม อารมณ์ และออกแบบการสื่อสารแบบ Multi-modal (พูด, มอง, ท่าทาง, สัมผัส) อย่างลื่นไหล</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-stone-800 text-white p-8 md:p-12 rounded-3xl text-center">
+            <div class="text-4xl mb-4">&#x1F52E;</div>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">สรุป: โลกเว็บปี 2030</h2>
+            <p class="text-lg md:text-xl font-light max-w-3xl mx-auto leading-relaxed text-stone-300">
+                "เว็บไซต์จะไม่ใช่พื้นที่ที่คุณเข้าไปเพื่ออ่านข้อมูลหรือคลิกปุ่มอีกต่อไป แต่มันจะเป็น <strong class="text-white">คู่หูดิจิทัลส่วนตัว</strong> ที่แปลงโฉมตัวเองตามความคิดของคุณ แสดงผลอย่างมีชีวิตชีวาผ่านพื้นที่รอบตัว และตอบสนองคุณได้ทันทีในพริบตาเดียวอย่างยั่งยืน"
+            </p>
+        </section>
+
+    </main>
+
+    <div data-include="components/footer.html"></div>
+</body>
+</html>
